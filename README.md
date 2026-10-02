@@ -1,16 +1,38 @@
-# React + Vite
+# Cypress E2E Automation - SauceDemo (Swag Labs)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains an automated UI testing framework for the [SauceDemo (Swag Labs)](https://www.saucedemo.com/) e-commerce application. Built from the ground up using **Cypress**, this project demonstrates modern, fast, and reliable web automation testing without the need for manual waits or complex WebDriver setups.
 
-Currently, two official plugins are available:
+This suite is designed as a standalone, modular architecture. Tests are self-contained, ensuring high reliability and making it an excellent reference for debugging DOM rendering issues and locator strategies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack & Tools
 
-## React Compiler
+* **Testing Framework:** Cypress (v16+)
+* **Language:** JavaScript (Node.js)
+* **Target Application:** React.js Web Frontend (SauceDemo)
+* **Assertions:** Chai (built into Cypress)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Setup and Installation
 
-## Expanding the ESLint configuration
+**1. Prerequisites:**
+Ensure you have [Node.js](https://nodejs.org/) (v14 or higher) installed on your machine.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**2. Clone the repository:**
+```bash
+git clone [https://github.com/Amish00/Cypress-E2E-SauceDemo.git](https://github.com/Amish00/Cypress-E2E-SauceDemo.git)
+cd Cypress-E2E-SauceDemo
+```
+**3. Install dependencies:**
+```bash
+npm install
+```
+⚙️ Execution
+Interactive Mode (Test Runner UI):
+Best for debugging, time-traveling, and watching tests run in real-time.
+```bash
+npx cypress open
+```
+Headless Mode (CLI):
+Best for CI/CD pipelines (like GitHub Actions) as it runs silently in the terminal.
+```bash
+npx cypress run
+```
